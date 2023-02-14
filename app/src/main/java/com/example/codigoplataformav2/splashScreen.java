@@ -2,6 +2,7 @@ package com.example.codigoplataformav2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -29,5 +30,6 @@ public class splashScreen extends AppCompatActivity {
         Iellipse1.setAnimation(ellipse1);
         Iellipse2.setAnimation(ellipse2);
         Ilogo.setAnimation(logo);
+
     }
 }
