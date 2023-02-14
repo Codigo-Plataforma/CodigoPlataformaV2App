@@ -20,7 +20,6 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
 
         back = findViewById(R.id.backButton);
-        register = findViewById(R.id.RegisterButton);
 
         username = findViewById(R.id.Username);
         password = findViewById(R.id.Password);
