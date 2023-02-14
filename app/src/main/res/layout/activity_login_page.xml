@@ -63,17 +63,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
-                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
                 android:text="Sign In"
                 android:textColor="@color/white"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:paddingLeft="9dp"
-                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="Please enter your username and \npassword to login."
                 android:textColor="@color/white"
                 android:textSize="18sp" />
@@ -88,7 +90,7 @@
             android:background="@drawable/loginlinearlayout2"
             android:orientation="vertical"
             android:paddingLeft="30dp"
-            android:paddingTop="80dp"
+            android:paddingTop="40dp"
             android:paddingRight="30dp"
             android:paddingBottom="10dp">
 
@@ -130,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/loginbutton"
                 android:drawableRight="@drawable/ic_baseline_login_24"
                 android:paddingLeft="70dp"
@@ -143,15 +145,15 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="50dp"
                 android:background="@color/black" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/LoginGoogle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/loginbutton"
                 android:drawableLeft="@drawable/google_icon"
@@ -161,11 +163,10 @@
                 android:text="Sign in with Google"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                app:backgroundTint="@color/white" />
+                android:textStyle="bold" />
 
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/LoginFacebook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -175,13 +176,13 @@
                 android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="Sign in with Facebook"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:layout_marginBottom="10dp"
                 android:textStyle="bold"
-                app:backgroundTint="@color/white" />
+                />
 
 
         </LinearLayout>
