@@ -15,4 +15,13 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="onboard1">Learn, innovate and grow</string>
+    <string name="onboard1_text">Here students take their foot into the learning environment to gather new skills that makes them the future’s software developer. </string>
+    <string name="onboard2">Take up your next step</string>
+    <string name="onboard2_text">Learn with bunch of other student and advance in your field. Learn about projects, placements, contests and much more.</string>
+    <string name="onboard3">Solve your queries faster</string>
+    <string name="onboard3_text">Build projects and stay ahead of the game. Struck somewhere? No worries, you’ve got a community to help discuss your queries and issues.</string>
+
 </resources>
