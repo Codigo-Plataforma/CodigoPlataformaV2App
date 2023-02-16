@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:id="@+id/loginPage"
-    tools:context=".LoginPage">
+    tools:context=".startups.LoginPage">
 
 
     <LinearLayout
@@ -33,10 +33,10 @@
                 android:layout_gravity="center">
 
                 <ImageButton
-                    android:layout_gravity="center"
                     android:id="@+id/backButton"
-                    android:layout_width="30dp"
+                    android:layout_width="31dp"
                     android:layout_height="30dp"
+                    android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_arrow_back_24"
                     android:contentDescription="back" />
 
@@ -103,7 +103,8 @@
                 android:hint="Username"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
-                android:textColorHint="@color/black" />
+                android:textColor="@color/black"
+                android:textColorHint="#707070" />
 
             <EditText
                 android:id="@+id/Password"
@@ -112,9 +113,10 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edittextshape"
                 android:hint="Password"
+                android:textColor="@color/black"
                 android:inputType="textPassword"
                 android:paddingLeft="20dp"
-                android:textColorHint="@color/black" />
+                android:textColorHint="#707070" />
 
             <TextView
                 android:layout_width="wrap_content"

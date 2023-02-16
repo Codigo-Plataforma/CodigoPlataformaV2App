@@ -1,13 +1,17 @@
-package com.example.codigoplataformav2;
+package com.example.codigoplataformav2.startups;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.example.codigoplataformav2.R;
 
 public class splashScreen extends AppCompatActivity {
     Animation ellipse1,ellipse2,logo;
@@ -30,6 +34,18 @@ public class splashScreen extends AppCompatActivity {
         Iellipse1.setAnimation(ellipse1);
         Iellipse2.setAnimation(ellipse2);
         Ilogo.setAnimation(logo);
+
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent i = new Intent(splashScreen.this, LoginPage.class);
+                startActivity(i);
+                finish();
+            }
+        },1700);
+
 
     }
 }
