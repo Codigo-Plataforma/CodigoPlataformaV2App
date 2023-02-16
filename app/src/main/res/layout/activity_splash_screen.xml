@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ellipse_2"
+        android:layout_width="541dp"
+        android:layout_height="541dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-196dp"
+        android:layout_marginRight="-184dp"
+        android:layout_marginBottom="-259dp"
+        android:background="@drawable/ellipse1" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/ellipse_1"
+        android:layout_width="470dp"
+        android:layout_height="470dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-191dp"
+        android:layout_marginTop="-189dp"
+        android:layout_marginRight="-223dp"
+        android:background="@drawable/ellipse1" />
+
+
+</RelativeLayout>
