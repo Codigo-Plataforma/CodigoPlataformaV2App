@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Codigo Plataforma V2</string>
+    <string name="WELCOME">Welcome</string>
+    <string name="welcome_text">Welcome to Codigo Plataforma the app. Please use your username and password to Login into app or Signup.</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_getstarted">Get Started</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_text">Create a username and password to sign up or sign up using Google or Facebook.</string>
+    <string name="log_in">Login</string>
+    <string name="enter_email_id">Enter your email id</string>
+    <string name="create_password">Create password</string>
+    <string name="reenter_password">Re-enter the password</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="sign_up_with_facebook">Sign Up with Facebook</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
