@@ -1,11 +1,14 @@
 package com.example.codigoplataformav2.startups;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.transition.Transition;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -40,6 +43,7 @@ public class splashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+
                 Intent i = new Intent(splashScreen.this, Getting_started_or_Login.class);
                 startActivity(i);
                 finish();
@@ -48,4 +52,5 @@ public class splashScreen extends AppCompatActivity {
 
 
     }
+
 }

@@ -34,8 +34,8 @@ public class Getting_started_or_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Getting_started_or_Login.this,LoginPage.class);
-
                 startActivity(i);
+
             }
         });
 
@@ -43,9 +43,7 @@ public class Getting_started_or_Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Getting_started_or_Login.this,Sign_Up.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(i);
-                finish();
             }
         });
     }
