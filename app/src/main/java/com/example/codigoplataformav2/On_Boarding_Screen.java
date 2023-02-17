@@ -13,12 +13,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
+
 import org.w3c.dom.Text;
 
 public class On_Boarding_Screen extends AppCompatActivity {
 
     ViewPager slideViewPager;
-    LinearLayout dotLayout;
+    DotsIndicator dotLayout;
 
     Button backbtn, nextbtn;
 
@@ -66,15 +68,14 @@ public class On_Boarding_Screen extends AppCompatActivity {
         });
 
         slideViewPager = (ViewPager) findViewById(R.id.slide_view_pager);
-        dotLayout = (LinearLayout) findViewById(R.id.dot_indicator);
+        dotLayout = (DotsIndicator) findViewById(R.id.dot_indicator);
 
 
         onboardingViewPagerAdapter = new OnboardingViewPagerAdapter(this);
 
         slideViewPager.setAdapter(onboardingViewPagerAdapter);
 
-        setUpIndicator(0);
-        slideViewPager.addOnPageChangeListener(viewlistner);
+        dotLayout.attachTo(slideViewPager);
 
     }
 
