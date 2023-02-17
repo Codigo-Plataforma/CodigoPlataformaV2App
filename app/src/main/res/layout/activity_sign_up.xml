@@ -206,7 +206,7 @@
                 android:fontFamily="@font/poppinsbold"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:drawableRight="@drawable/foreward_arrow"
+                android:drawableRight="@drawable/foreward_arrow_black"
                 android:drawableLeft="@drawable/google_icon"
                 android:background="@drawable/goole_facebook_shape"
                 android:paddingLeft="40dp"
@@ -228,7 +228,7 @@
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:drawableLeft="@drawable/facebook_icon"
-                android:drawableRight="@drawable/foreward_arrow"
+                android:drawableRight="@drawable/foreward_arrow_black"
                 android:background="@drawable/goole_facebook_shape"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp">
