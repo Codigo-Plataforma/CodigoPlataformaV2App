@@ -32,5 +32,10 @@
     <string name="onboard2_text">Learn with bunch of other student and advance in your field. Learn about projects, placements, contests and much more.</string>
     <string name="onboard3">Solve your queries faster</string>
     <string name="onboard3_text">Build projects and stay ahead of the game. Struck somewhere? No worries, you’ve got a community to help discuss your queries and issues.</string>
+    <string name="name_is_btn_but_it_is_actually_a_tv">name is btn but it is actually a tv</string>
+    <string name="linked_to_pager_adapter">linked to pager adapter</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="login">Login</string>
 
 </resources>
