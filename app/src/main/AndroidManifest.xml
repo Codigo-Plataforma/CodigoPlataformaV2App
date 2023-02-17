@@ -14,21 +14,24 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".Sign_Up"
+            android:name=".startups.Sign_Up"
             android:exported="true">
 
         </activity>
 
         <activity
-            android:name=".Getting_started_or_Login"
+            android:name=".startups.Getting_started_or_Login"
             android:exported="true">
+
+
+        </activity>
         <activity
             android:name=".startups.LoginPage"
             android:exported="false" >
 
             <meta-data
                 android:name="android.app.lib_name"
-                android:value="" />
+                android:value="true" />
         </activity>
         <activity
             android:name=".startups.splashScreen"
@@ -49,11 +52,6 @@
             android:exported="false" >
         </activity>
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
 
     </application>
 

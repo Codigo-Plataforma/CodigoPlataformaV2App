@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sign_Up"
+    tools:context=".startups.Sign_Up"
     android:fillViewport="true"
     android:background="@color/orange"
     android:orientation="vertical">
@@ -43,6 +43,7 @@
                 </View>
 
                 <TextView
+                    android:id="@+id/btn_Login_in_sign_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/log_in"
@@ -156,6 +157,7 @@
                 android:hint="@string/reenter_password"
                 android:textColorHint="@color/grey"
                 android:inputType="textPassword"
+                android:textColor="@color/black"
                 android:padding="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="30dp"
@@ -174,8 +176,8 @@
                 android:layout_gravity="center"
                 android:text="@string/signup"
                 android:drawableRight="@drawable/login_arrow"
-                android:paddingRight="125dp"
-                android:paddingLeft="125dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
                 android:background="@drawable/buttonlogin"
                 app:backgroundTint="@color/black">
 
