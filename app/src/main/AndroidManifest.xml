@@ -12,14 +12,56 @@
         android:theme="@style/Theme.CodigoPlataformaV2"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".startups.Sign_Up"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".startups.On_Boarding_Screen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+
+
+        <activity
+            android:name=".startups.Getting_started_or_Login"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".startups.LoginPage"
+            android:exported="false"
+            android:screenOrientation="portrait">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="true" />
+        </activity>
+        <activity
+            android:name=".startups.splashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>
