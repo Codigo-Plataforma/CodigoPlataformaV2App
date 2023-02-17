@@ -22,7 +22,9 @@ public class On_Boarding_Screen extends AppCompatActivity {
     ViewPager slideViewPager;
     DotsIndicator dotLayout;
 
-    Button backbtn, nextbtn;
+    Button backbtn;
+    TextView nextbtn;
+    boolean gourav = false;
 
     TextView[] dots;
 
@@ -37,11 +39,13 @@ public class On_Boarding_Screen extends AppCompatActivity {
         backbtn = findViewById(R.id.btn_previous);
         nextbtn = findViewById(R.id.btn_next_signup);
 
+
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if(getitem(0) > 0) {
+                    reverttext();
                     slideViewPager.setCurrentItem(getitem(-1), true);
                 }
                 else if(getitem(0) == 0){
@@ -56,16 +60,24 @@ public class On_Boarding_Screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (getitem(0) < 2){
+                if (getitem(0) == 0){
                     slideViewPager.setCurrentItem(getitem(+1), true);
-                }
-                else if (getitem(0) == 2){
+
+                } else if (getitem(0) == 1) {
+                    slideViewPager.setCurrentItem(getitem(+1), true);
+                    settext();
+
+                } else if (getitem(0) == 2){
                     Intent i = new Intent(On_Boarding_Screen.this, Sign_Up.class);
                     startActivity(i);
                     finish();
                 }
             }
         });
+
+        if(gourav){
+            nextbtn.setText(R.string.signup);
+        }
 
         slideViewPager = (ViewPager) findViewById(R.id.slide_view_pager);
         dotLayout = (DotsIndicator) findViewById(R.id.dot_indicator);
@@ -122,4 +134,7 @@ public class On_Boarding_Screen extends AppCompatActivity {
     private int getitem (int i){
         return slideViewPager.getCurrentItem() + i;
     }
+    private void settext (){ nextbtn.setText(R.string.signup);}
+
+    private void reverttext (){ nextbtn.setText(R.string.next);}
 }
