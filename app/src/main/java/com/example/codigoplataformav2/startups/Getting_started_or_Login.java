@@ -42,7 +42,7 @@ public class Getting_started_or_Login extends AppCompatActivity {
         getStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Getting_started_or_Login.this,Sign_Up.class);
+                Intent i = new Intent(Getting_started_or_Login.this,On_Boarding_Screen.class);
                 startActivity(i);
             }
         });

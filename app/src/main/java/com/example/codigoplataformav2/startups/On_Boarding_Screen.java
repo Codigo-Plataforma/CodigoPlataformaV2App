@@ -1,6 +1,5 @@
-package com.example.codigoplataformav2;
+package com.example.codigoplataformav2.startups;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -13,7 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.codigoplataformav2.R;
 
 public class On_Boarding_Screen extends AppCompatActivity {
 

@@ -15,7 +15,10 @@
         <activity
             android:name=".startups.Sign_Up"
             android:exported="true">
-            android:name=".On_Boarding_Screen"
+
+        </activity>
+
+        <activity android:name=".startups.On_Boarding_Screen"
             android:exported="true" >
 
         </activity>
