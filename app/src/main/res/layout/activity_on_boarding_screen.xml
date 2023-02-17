@@ -21,21 +21,26 @@
             android:layout_width="match_parent"
             android:layout_height="584dp"
             android:layout_marginTop="40dp"
-            android:layout_marginBottom="30dp">
+            android:layout_marginBottom="30dp"
+            android:contentDescription="linked to pager adapter">
 
         </androidx.viewpager.widget.ViewPager>
 
-        <LinearLayout
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
             android:id="@+id/dot_indicator"
-            android:layout_width="107dp"
-            android:layout_height="43dp"
-            android:layout_below="@id/slide_view_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="@color/dark_grey"
             android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginBottom="30dp"
-            android:orientation="horizontal">
+            android:paddingBottom="20dp"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="16dp"
+            app:dotsSpacing="6dp"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="@color/orange"
+            app:progressMode="false">
 
-        </LinearLayout>
+        </com.tbuonomo.viewpagerdotsindicator.DotsIndicator>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,6 +54,8 @@
                 android:layout_height="wrap_content"
                 android:background="#00000000"
                 android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16dp"
                 android:text="@string/previous"
                 android:textColor="@color/black">
 
@@ -57,15 +64,26 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1">
             </View>
-            <Button
+            <TextView
                 android:id="@+id/btn_next_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/next_and_go_to_signup_btn"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="34dp"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:contentDescription="name is btn but it is actually a tv"
                 android:text="@string/next"
+                android:background="@drawable/next_and_go_to_signup_btn"
                 android:drawableRight="@drawable/foreward_arrow_white">
 
-            </Button>
+            </TextView>
+
         </LinearLayout>
 
     </LinearLayout>
