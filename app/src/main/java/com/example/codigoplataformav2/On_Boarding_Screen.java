@@ -24,7 +24,6 @@ public class On_Boarding_Screen extends AppCompatActivity {
 
     Button backbtn;
     TextView nextbtn;
-    boolean gourav = false;
 
     TextView[] dots;
 
@@ -74,10 +73,6 @@ public class On_Boarding_Screen extends AppCompatActivity {
                 }
             }
         });
-
-        if(gourav){
-            nextbtn.setText(R.string.signup);
-        }
 
         slideViewPager = (ViewPager) findViewById(R.id.slide_view_pager);
         dotLayout = (DotsIndicator) findViewById(R.id.dot_indicator);
