@@ -1,6 +1,6 @@
-package com.example.codigoplataformav2;
+package com.example.codigoplataformav2.startups;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.Px;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.codigoplataformav2.R;
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 
 import org.w3c.dom.Text;
@@ -33,6 +34,11 @@ public class On_Boarding_Screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (Build.VERSION.SDK_INT >= 21) {
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
+            getWindow().setStatusBarColor(getResources().getColor(R.color.orange));
+        }
         setContentView(R.layout.activity_on_boarding_screen);
 
         backbtn = findViewById(R.id.btn_previous);
@@ -44,7 +50,6 @@ public class On_Boarding_Screen extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(getitem(0) > 0) {
-                    reverttext();
                     slideViewPager.setCurrentItem(getitem(-1), true);
                 }
                 else if(getitem(0) == 0){
@@ -64,7 +69,6 @@ public class On_Boarding_Screen extends AppCompatActivity {
 
                 } else if (getitem(0) == 1) {
                     slideViewPager.setCurrentItem(getitem(+1), true);
-                    settext();
 
                 } else if (getitem(0) == 2){
                     Intent i = new Intent(On_Boarding_Screen.this, Sign_Up.class);
@@ -87,6 +91,7 @@ public class On_Boarding_Screen extends AppCompatActivity {
     }
 
     public void setUpIndicator (int position){
+        settext();
 
         dots = new TextView[3];
         dotLayout.removeAllViews();
@@ -106,13 +111,14 @@ public class On_Boarding_Screen extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             dots[position].setTextColor(getResources().getColor(R.color.orange,getApplicationContext().getTheme()));
         }
+
     }
 
 
     //when user scrolls
     ViewPager.OnPageChangeListener viewlistner = new ViewPager.SimpleOnPageChangeListener(){
         @Override
-        public void onPageScrolled(int position, float positionoffset, int positionoffsetpixels){
+        public void onPageScrolled(int position, float positionOffset, @Px int positionOffsetPixels){
         }
 
         @Override
@@ -126,10 +132,11 @@ public class On_Boarding_Screen extends AppCompatActivity {
         }
     };
 
+
     private int getitem (int i){
         return slideViewPager.getCurrentItem() + i;
     }
-    private void settext (){ nextbtn.setText(R.string.signup);}
+    public void settext (){ nextbtn.setText(R.string.signup);}
 
     private void reverttext (){ nextbtn.setText(R.string.next);}
 }

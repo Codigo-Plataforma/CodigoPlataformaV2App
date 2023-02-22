@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".On_Boarding_Screen"
+    tools:context=".startups.On_Boarding_Screen"
     tools:viewBindingIgnore="true"
     android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginRight="33dp"
         android:layout_marginLeft="33dp">
@@ -22,7 +22,7 @@
             android:layout_height="584dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="30dp"
-            android:contentDescription="linked to pager adapter">
+            android:contentDescription="@string/linked_to_pager_adapter">
 
         </androidx.viewpager.widget.ViewPager>
 
@@ -55,7 +55,7 @@
                 android:background="#00000000"
                 android:textAllCaps="false"
                 android:textStyle="bold"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:text="@string/previous"
                 android:textColor="@color/black">
 
@@ -72,15 +72,15 @@
                 android:gravity="center"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:paddingRight="30dp"
-                android:paddingLeft="34dp"
-                android:textSize="22dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="34dp"
+                android:textSize="22sp"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:contentDescription="name is btn but it is actually a tv"
+                android:contentDescription="@string/name_is_btn_but_it_is_actually_a_tv"
                 android:text="@string/next"
                 android:background="@drawable/next_and_go_to_signup_btn"
-                android:drawableRight="@drawable/foreward_arrow_white">
+                app:drawableRightCompat="@drawable/foreward_arrow_white">
 
             </TextView>
 

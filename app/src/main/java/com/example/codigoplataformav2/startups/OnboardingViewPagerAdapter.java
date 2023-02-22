@@ -1,4 +1,4 @@
-package com.example.codigoplataformav2;
+package com.example.codigoplataformav2.startups;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.example.codigoplataformav2.R;
 
 public class OnboardingViewPagerAdapter extends PagerAdapter {
 
