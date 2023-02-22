@@ -36,7 +36,8 @@
         <activity
             android:name=".startups.LoginPage"
             android:exported="false"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:parentActivityName=".startups.Getting_started_or_Login">
 
             <meta-data
                 android:name="android.app.lib_name"

@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="1"
         android:background="@drawable/loginlinearlayout1">
@@ -28,57 +28,68 @@
             android:paddingRight="30dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/back_register"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_gravity="center">
 
                 <ImageButton
                     android:id="@+id/backButton"
-                    android:layout_width="31dp"
-                    android:layout_height="30dp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_arrow_back_24"
-                    android:contentDescription="back" />
+                    android:contentDescription="@string/back" >
+
+                </ImageButton>
 
                 <View
-                    android:layout_width="wrap_content"
+                    android:id="@+id/view_offset_helper"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/orange" />
+                    android:layout_weight="1">
+
+                </View>
 
                 <TextView
                     android:id="@+id/RegisterButton"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="bottom"
+                    android:text="@string/register"
                     android:textColor="@color/white"
-                    android:text="Register"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold">
+
+                </TextView>
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:text="Sign In"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="5dp"
+                android:text="@string/sign_in"
                 android:textColor="@color/white"
                 android:textSize="36sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="9dp"
                 android:layout_marginTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="Please enter your username and \npassword to login."
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="9dp"
+                android:paddingBottom="10dp"
+                android:text="@string/Sign_in_text"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
 
         </LinearLayout>
 
@@ -100,11 +111,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edittextshape"
-                android:hint="Username"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/username"
                 android:inputType="textPersonName"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:textColor="@color/black"
-                android:textColorHint="#707070" />
+                android:textColorHint="#707070"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="Username">
+
+            </EditText>
 
             <EditText
                 android:id="@+id/Password"
@@ -112,11 +128,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edittextshape"
-                android:hint="Password"
-                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/password"
                 android:inputType="textPassword"
-                android:paddingLeft="20dp"
-                android:textColorHint="#707070" />
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#707070"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="Password">
+
+            </EditText>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,10 +145,11 @@
                 android:layout_gravity="right"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="30dp"
-                android:text="Forgot Password?"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/forgot_password"
                 android:textColor="@color/black"
-
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
             <Button
                 android:id="@+id/loginButton"
@@ -136,12 +158,13 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/loginbutton"
+                android:textColor="@color/white"
                 android:drawableEnd="@drawable/ic_baseline_login_24"
-                android:paddingLeft="70dp"
-                android:paddingRight="70dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="110dp"
+                android:paddingRight="110dp"
                 android:text="@string/login"
                 android:textAllCaps="false"
-
                 app:backgroundTint="@color/black" />
 
             <View
@@ -160,6 +183,7 @@
                 android:background="@drawable/loginbutton"
                 android:drawableStart="@drawable/google_icon"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+                android:fontFamily="@font/poppins_medium"
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"
                 android:text="@string/sign_in_with_google"
@@ -173,18 +197,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/loginbutton"
                 android:drawableStart="@drawable/facebook_logo"
                 android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+                android:fontFamily="@font/poppins_medium"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
-                android:layout_marginTop="10dp"
                 android:text="@string/sign_in_with_facebook"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
 
         </LinearLayout>

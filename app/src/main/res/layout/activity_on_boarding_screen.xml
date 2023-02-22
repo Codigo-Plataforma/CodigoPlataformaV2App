@@ -53,33 +53,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
                 android:text="@string/previous"
-                android:textColor="@color/black">
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold">
 
             </Button>
             <View android:layout_height="match_parent"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="1">
             </View>
+
             <TextView
                 android:id="@+id/btn_next_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingEnd="30dp"
-                android:paddingStart="34dp"
-                android:textSize="22sp"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:contentDescription="@string/name_is_btn_but_it_is_actually_a_tv"
-                android:text="@string/next"
                 android:background="@drawable/next_and_go_to_signup_btn"
+                android:contentDescription="@string/name_is_btn_but_it_is_actually_a_tv"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:paddingStart="34dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
                 app:drawableRightCompat="@drawable/foreward_arrow_white">
 
             </TextView>

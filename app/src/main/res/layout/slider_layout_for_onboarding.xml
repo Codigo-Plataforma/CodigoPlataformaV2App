@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="380dp"
         android:layout_marginTop="0dp"
-        android:src="@drawable/on_boarding_1">
+        android:src="@drawable/on_boarding_1"
+        android:contentDescription="@string/img_for_slider_layout">
 
     </ImageView>
 
@@ -19,7 +20,7 @@
         android:id="@+id/tv_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/poppins_semibold"
         android:padding="5dp"
         android:text="@string/onboard1"
         android:textColor="@color/black"
@@ -31,7 +32,7 @@
         android:id="@+id/tv_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/poppins_medium"
         android:padding="5dp"
         android:text="@string/onboard1_text"
         android:textColor="@color/black"

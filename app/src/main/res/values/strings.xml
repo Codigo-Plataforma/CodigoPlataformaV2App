@@ -37,5 +37,12 @@
     <string name="sign_in_with_facebook">Sign in with Facebook</string>
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="login">Login</string>
+    <string name="back">back</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="Sign_in_text">Please enter your username and password to login.</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="img_for_slider_layout">img for slider layout</string>
 
 </resources>
