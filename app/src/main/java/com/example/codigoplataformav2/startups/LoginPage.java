@@ -2,7 +2,6 @@ package com.example.codigoplataformav2.startups;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,8 +20,7 @@ import com.example.codigoplataformav2.R;
 public class LoginPage extends AppCompatActivity {
     ImageButton back;
     TextView register;
-    Button Login;
-    ImageView show_hide_pass;
+    Button login;
     EditText username;
     EditText password;
     @Override
@@ -41,27 +39,20 @@ public class LoginPage extends AppCompatActivity {
         username = findViewById(R.id.Username);
         password = findViewById(R.id.Password);
         register = findViewById(R.id.RegisterButton);
+        login = findViewById(R.id.loginButton);
 
-
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LoginPage.this,Sign_Up.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                startActivity(i);
-                finish();
-            }
+        register.setOnClickListener(v -> {
+            Intent i = new Intent(LoginPage.this,Sign_Up.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivity(i);
+            finish();
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LoginPage.this,Getting_started_or_Login.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                startActivity(i);
-                finish();
-            }
-
+        back.setOnClickListener(v -> {
+            Intent i = new Intent(LoginPage.this,Getting_started_or_Login.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivity(i);
+            finish();
         });
     }
     public void ShowHidePass(View view){
@@ -69,17 +60,18 @@ public class LoginPage extends AppCompatActivity {
         if(view.getId()==R.id.show_pass_btn){
 
             if(password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
-                ((ImageView)(view)).setImageResource(R.drawable.show_hide_pass_res);
+                ((ImageView)(view)).setImageResource(R.drawable.open_eye);
 
                 //Show Password
                 password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                password.setSelection(password.getText().length());
             }
             else{
-                ((ImageView)(view)).setImageResource(R.drawable.closed_eye_icon);
+                ((ImageView)(view)).setImageResource(R.drawable.closed_eye);
 
                 //Hide Password
                 password.setTransformationMethod(PasswordTransformationMethod.getInstance());
-
+                password.setSelection(password.getText().length());
             }
         }
     }

@@ -157,6 +157,7 @@
 
             </EditText>
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -169,24 +170,64 @@
 
             </TextView>
 
-            <EditText
-                android:id="@+id/et_reenter_password"
-                android:layout_width="match_parent"
+<!--            <EditText-->
+<!--                android:id="@+id/et_reenter_password"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:autofillHints="Re-enter the password"-->
+<!--                android:background="@drawable/edittextshapes"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:hint="@string/reenter_password"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:padding="15dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/grey"-->
+<!--                tools:ignore="TextFields">-->
+
+<!--            </EditText>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="30dp"
-                android:autofillHints="Re-enter the password"
-                android:background="@drawable/edittextshapes"
-                android:fontFamily="@font/poppins_light"
-                android:hint="@string/reenter_password"
-                android:inputType="textPassword"
-                android:padding="15dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/grey"
-                tools:ignore="TextFields">
+                android:layout_marginRight="30dp">
 
-            </EditText>
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextshape"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="@string/reenter_password"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    tools:ignore="RtlSymmetry"
+                    android:autofillHints="Password">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/show_pass_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:alpha="0.7"
+                    android:padding="5dp"
+                    android:onClick="ShowHidePass"
+                    android:src="@drawable/closed_eye"
+                    android:contentDescription="presstoshow"
+                    tools:ignore="UsingOnClickInXml">
+
+                </ImageView>
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/btn_signup"

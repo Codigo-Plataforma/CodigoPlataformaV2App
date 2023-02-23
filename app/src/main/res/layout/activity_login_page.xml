@@ -154,8 +154,9 @@
                     android:alpha="0.7"
                     android:padding="5dp"
                     android:onClick="ShowHidePass"
-                    android:src="@drawable/closed_eye_icon"
-                    android:contentDescription="presstoshow">
+                    android:src="@drawable/closed_eye"
+                    android:contentDescription="presstoshow"
+                    tools:ignore="UsingOnClickInXml">
 
                 </ImageView>
             </RelativeLayout>
