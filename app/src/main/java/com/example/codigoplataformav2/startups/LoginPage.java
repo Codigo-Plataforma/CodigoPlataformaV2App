@@ -2,13 +2,17 @@ package com.example.codigoplataformav2.startups;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.codigoplataformav2.R;
@@ -18,6 +22,7 @@ public class LoginPage extends AppCompatActivity {
     ImageButton back;
     TextView register;
     Button Login;
+    ImageView show_hide_pass;
     EditText username;
     EditText password;
     @Override
@@ -58,5 +63,24 @@ public class LoginPage extends AppCompatActivity {
             }
 
         });
+    }
+    public void ShowHidePass(View view){
+
+        if(view.getId()==R.id.show_pass_btn){
+
+            if(password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
+                ((ImageView)(view)).setImageResource(R.drawable.show_hide_pass_res);
+
+                //Show Password
+                password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            }
+            else{
+                ((ImageView)(view)).setImageResource(R.drawable.closed_eye_icon);
+
+                //Hide Password
+                password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+            }
+        }
     }
 }

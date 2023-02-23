@@ -49,6 +49,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     //dot indicator dependency
     implementation("com.tbuonomo:dotsindicator:4.3")
+//    //for password EditText
+//    implementation ‘com.google.android.material:material:<version>’
     //glide
     //volley
     //dexter

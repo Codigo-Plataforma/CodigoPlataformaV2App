@@ -21,7 +21,7 @@ public class Getting_started_or_Login extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().setNavigationBarColor(getResources().getColor(R.color.orange));
-            getWindow().setStatusBarColor(getResources().getColor(R.color.orange));
+            getWindow().setStatusBarColor(getResources().getColor(R.color.black));
         }
 
         setContentView(R.layout.activity_getting_started_or_login);
