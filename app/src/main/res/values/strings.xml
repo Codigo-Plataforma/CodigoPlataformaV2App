@@ -44,5 +44,9 @@
     <string name="username">Username</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="img_for_slider_layout">img for slider layout</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="github">Github</string>
+    <string name="settings">Settings</string>
 
 </resources>

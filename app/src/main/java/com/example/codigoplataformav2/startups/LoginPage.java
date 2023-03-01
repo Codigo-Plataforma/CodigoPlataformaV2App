@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.codigoplataformav2.Dashboard.LandingPage;
 import com.example.codigoplataformav2.R;
 
 
@@ -40,6 +41,13 @@ public class LoginPage extends AppCompatActivity {
         password = findViewById(R.id.Password);
         register = findViewById(R.id.RegisterButton);
         login = findViewById(R.id.loginButton);
+
+        login.setOnClickListener(v -> {
+            Intent i = new Intent(LoginPage.this, LandingPage.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivity(i);
+            finish();
+        });
 
         register.setOnClickListener(v -> {
             Intent i = new Intent(LoginPage.this,Sign_Up.class);

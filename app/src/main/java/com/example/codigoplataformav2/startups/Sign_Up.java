@@ -53,7 +53,6 @@ public class Sign_Up extends AppCompatActivity {
             Intent i = new Intent(Sign_Up.this,LoginPage.class);
             i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
             startActivity(i);
-
             finish();
         });
     }

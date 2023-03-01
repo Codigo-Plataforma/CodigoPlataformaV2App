@@ -49,8 +49,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     //dot indicator dependency
     implementation("com.tbuonomo:dotsindicator:4.3")
-//    //for password EditText
-//    implementation ‘com.google.android.material:material:<version>’
+    //for navbar FAB
+    implementation 'com.google.android.material:material:1.9.0-alpha02'
+    //for RecylerView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    //for CardView
+    implementation "androidx.cardview:cardview:1.0.0"
     //glide
     //volley
     //dexter
