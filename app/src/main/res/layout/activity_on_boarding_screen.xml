@@ -38,7 +38,6 @@
             app:dotsWidthFactor="2.5"
             app:selectedDotColor="@color/orange"
             app:progressMode="false">
-
         </com.tbuonomo.viewpagerdotsindicator.DotsIndicator>
 
         <LinearLayout
